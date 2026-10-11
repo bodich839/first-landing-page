@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сучасні сайти для розвитку вашого бізнесу">
+  <title>Nova Studio — сайти для бізнесу</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+    }
+
+    .logo { font-size: 24px; font-weight: bold; color: #8b9cff; }
+    nav a { color: #dbe4ff; text-decoration: none; margin-left: 22px; }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 70px 8%;
+      background: radial-gradient(ellipse at 80% 20%, #28316b, transparent 55%);
+    }
+
+    .tag {
+      color: #a5b4fc;
+      border: 1px solid #414b87;
+      padding: 7px 14px;
+      border-radius: 30px;
+      margin-bottom: 24px;
+    }
+
+    h1 { font-size: clamp(38px, 7vw, 68px); line-height: 1.1; max-width: 760px; }
+    h1 span { color: #8b9cff; }
+    .hero p { max-width: 570px; color: #c2cbe0; margin: 24px 0 32px; font-size: 18px; }
+
+    .button {
+      display: inline-block;
+      background: #7889ff;
+      color: #080d1b;
+      padding: 14px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section { padding: 70px 8%; }
+    h2 { font-size: 34px; margin-bottom: 16px; }
+    .muted { color: #b7c0d6; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: #151c32;
+      border: 1px solid #293352;
+      padding: 26px;
+      border-radius: 16px;
+    }
+
+    .card h3 { margin-bottom: 12px; color: #a5b4fc; }
+    .contact { text-align: center; background: #11182c; }
+    .contact p { margin: 12px 0 26px; }
+    footer { text-align: center; padding: 24px; color: #929db7; }
+
+    @media (max-width: 600px) {
+      header { padding: 20px 6%; }
+      nav a { margin-left: 10px; font-size: 13px; }
+      .hero, section { padding-left: 6%; padding-right: 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Nova Studio.</div>
+    <nav>
+      <a href="#services">Послуги</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">Рішення для сучасного бізнесу</div>
+      <h1>Ваш бізнес заслуговує на <span>більше.</span></h1>
+      <p>Створюємо сучасні вебсайти, які допомагають компаніям презентувати свої послуги та знаходити нових клієнтів.</p>
+      <a class="button" href="#contact">Обговорити проєкт →</a>
+    </section>
+
+    <section id="services">
+      <h2>Що ми пропонуємо</h2>
+      <p class="muted">Усе необхідне для презентації вашого бізнесу в інтернеті.</p>
+      <div class="services">
+        <article class="card">
+          <h3>🌐 Лендинги</h3>
+          <p class="muted">Односторінкові сайти для товарів, послуг і рекламних кампаній.</p>
+        </article>
+        <article class="card">
+          <h3>📱 Адаптивний дизайн</h3>
+          <p class="muted">Зручне відображення на смартфонах, планшетах і комп'ютерах.</p>
+        </article>
+        <article class="card">
+          <h3>⚡ Швидкий запуск</h3>
+          <p class="muted">Зрозуміла структура, помітні кнопки та акцент на пропозиції бізнесу.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Готові розпочати?</h2>
+      <p class="muted">Розкажіть про свій проєкт — і ми обговоримо рішення.</p>
+      <a class="button" href="mailto:hello@example.com">Написати нам</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Nova Studio. Демонстраційний проєкт.</footer>
+</body>
+</html>
